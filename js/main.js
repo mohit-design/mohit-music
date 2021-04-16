@@ -92,9 +92,9 @@ $(document).keydown(function (event) {
   }
 });
 // Disabled Right Click JS
-// window.oncontextmenu = function () {
-//   return false;
-// }
+window.oncontextmenu = function () {
+  return false;
+}
 // Disabled Ctrl + U and Ctrl + C JS
 $(document).keydown(function(event) {
 	var pressedKey = String.fromCharCode(event.keyCode).toLowerCase();
