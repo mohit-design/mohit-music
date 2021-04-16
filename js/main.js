@@ -3,14 +3,6 @@ $(function() {
   AOS.init({
     easing: 'ease-in-out-sine'
   });
-  // On Scroll Logo and Navbar Menu Background Change JS
-	$(window).scroll(function(){
-	  if ($(window).scrollTop() >= 400) {
-	    $(".bg-logo-navbar-menu-desktop").addClass("active");
-	   } else {
-	    $(".bg-logo-navbar-menu-desktop").removeClass("active");
-	   }
-	});
   // Desktop Logo and Navigationbar Menu Section JS
 	var lastScrollTop = 0,
   offsetTopMenu = 0;
@@ -100,9 +92,9 @@ $(document).keydown(function (event) {
   }
 });
 // Disabled Right Click JS
-window.oncontextmenu = function () {
-  return false;
-}
+// window.oncontextmenu = function () {
+//   return false;
+// }
 // Disabled Ctrl + U and Ctrl + C JS
 $(document).keydown(function(event) {
 	var pressedKey = String.fromCharCode(event.keyCode).toLowerCase();
