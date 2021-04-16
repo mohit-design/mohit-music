@@ -90,3 +90,23 @@ $(function() {
     $('html,body').animate({scrollTop: 0},4000);
   });
 });
+// Disabled "Ctrl" and "Ctrl + Shift" Keys JS
+$(document).keydown(function (event) {
+  if (event.keyCode == 123) {
+      return false;
+  }
+  else if ((event.ctrlKey && event.shiftKey && event.keyCode == 73) || (event.ctrlKey && event.shiftKey && event.keyCode == 74)) {
+      return false;
+  }
+});
+// Disabled Right Click JS
+window.oncontextmenu = function () {
+  return false;
+}
+// Disabled Ctrl + U and Ctrl + C JS
+$(document).keydown(function(event) {
+	var pressedKey = String.fromCharCode(event.keyCode).toLowerCase();
+	if (event.ctrlKey && (pressedKey == "c" || pressedKey == "u")) {
+	return false;
+	}
+});

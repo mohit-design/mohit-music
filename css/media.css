@@ -104,6 +104,8 @@ p { font: 1.6rem/1.7 "Muli-Light"; }
 	
 /*------- Price Section Starts -------*/
 
+.bg-price { padding: 20px 15px 0; }
+.panel-price { margin-bottom: 20px; }
 .price-content-info > h3 { font-size: 2.4rem; }
 .lunch-dinner-items > li { font-size: 1.6rem; }
 
@@ -187,7 +189,7 @@ p { font: 1.6rem/1.7 "Muli-Light"; }
 /*------- Mobile Navbar Menu Section Starts -------*/
 
 .fixed-navbar-menu-mobile { background: -webkit-linear-gradient(#ffc08a, #E91E63); background: -moz-linear-gradient(#ffc08a, #E91E63); background: -ms-linear-gradient(#ffc08a, #E91E63); background: -o-linear-gradient(#ffc08a, #E91E63); background: linear-gradient(#ffc08a, #E91E63); bottom: 0; display: block; clip-path: circle(100px at 90% -20%); height: 100%; left: 0; position: fixed; right: 0; top: 0; -webkit-transition: 1s ease; -moz-transition: 1s ease; -ms-transition: 1s ease; -o-transition: 1s ease; transition: 1s ease; width: 100%; z-index: 9; }
-.fixed-navbar-menu-mobile.active { clip-path: circle(1000px at 90% -10%); }
+.fixed-navbar-menu-mobile.active { clip-path: circle(1500px at 90% -10%); }
 .menu-listing-mobile { left: 50%; opacity: 0; position: absolute; top: 40%; -webkit-transform: translate(-50%,-50%); -moz-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); -o-transform: translate(-50%,-50%); transform: translate(-50%,-50%); -webkit-transition: 1s ease; -moz-transition: 1s ease; -ms-transition: 1s ease; -o-transition: 1s ease; transition: 1s ease; visibility: hidden; width: 100%; z-index: 10; }
 .menu-listing-mobile.active { opacity: 1; top: 50%; -webkit-transition: 1s ease 0.25s; -moz-transition: 1s ease 0.25s; -ms-transition: 1s ease 0.25s; -o-transition: 1s ease 0.25s; transition: 1s ease 0.25s; visibility: visible; }
 .menu-listing-mobile > li { display: block; margin-bottom: 30px; }
@@ -208,6 +210,7 @@ p { font: 1.6rem/1.7 "Muli-Light"; }
 
 .bg-wedo { padding: 30px 15px 0; }
 .panel-wedo { margin-bottom: 30px; }
+.panel-wedo:hover { transform: translateY(0%); -webkit-transform: translateY(0%); -moz-transform: translateY(0%); -ms-transform: translateY(0%); -o-transform: translateY(0%); }
 
 /*------- We Do Section Ends -------*/
 
