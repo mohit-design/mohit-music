@@ -1,0 +1,209 @@
+/*------- Font Family Starts -------*/
+
+@font-face { font-family: "Muli-Light"; src: url("../fonts/Muli-Light.ttf"); }
+@font-face { font-family: "Muli-SemiBold"; src: url("../fonts/Muli-SemiBold.ttf"); }
+@font-face { font-family: "Muli-Bold"; src: url("../fonts/Muli-Bold.ttf"); }
+
+/*------- Font Family Ends -------*/
+
+/*------- Reset CSS Starts -------*/
+
+html { letter-spacing: 1px; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+body { overflow-x: hidden; }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul { margin: 0; padding: 0; }
+li { list-style: none; }
+a,
+a:hover,
+a:focus { outline: 0; text-decoration: none; -webkit-transition: 0.5s linear; -moz-transition: 0.5s linear; -ms-transition: 0.5s linear; -o-transition: 0.5s linear; transition: 0.5s linear; }
+
+/*------- Reset CSS Ends -------*/
+
+/*------- Common CSS Starts -------*/
+
+.flex-align-center-desktop { -webkit-align-items: center; align-items: center; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
+.section-heading > h2 { color: #ff377b; font: 4rem/1 "Muli-SemiBold"; margin-bottom: 30px; padding: 15px 0 20px; position: relative; z-index: 1; }
+.section-heading > h2::before,
+.section-heading > h2::after { background-color: #ff377b; content: ""; display: block; height: 4px; left: 50%; position: absolute; top: 0; -webkit-transform: translateX(-50%); -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); transform: translateX(-50%); width: 70px; }
+.section-heading > h2::after { bottom: 0; top: auto; }
+.section-heading > p { color: #c393cb; margin-bottom: 50px; }
+p { font: 1.8rem/1.7 "Muli-Light"; }
+
+/*------- Common CSS Ends -------*/
+
+/*------- Custom Scrollbar Section Starts -------*/
+
+::-webkit-scrollbar { width: 7px; }
+::-webkit-scrollbar-track { background-color: #E91E63; }
+::-webkit-scrollbar-thumb { background-color: #fff; }
+::-webkit-scrollbar-thumb:hover { background-color: #c393cb; }
+
+/*------- Custom Scrollbar Section Ends -------*/
+
+/*------- Scroll To Top Section Starts -------*/
+
+.scroll-to-top > a { background-color: #ff377b; border-radius: 50%; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; bottom: 60px; opacity: 0; height: 50px; position: fixed; right: 30px; width: 50px; }
+.scroll-to-top > a > i { color: #ffffff; display: block; font-size: 1.8rem; line-height: 50px; text-align: center; }
+.scroll-to-top.active > a { bottom: 30px; opacity: 1; }
+
+/*------- Scroll To Top Section Ends -------*/
+
+/*------- Mobile Logo and Burger Menu Section Starts -------*/
+
+.bg-logo-burger-menu-mobile,
+.fixed-navbar-menu-mobile { display: none; }
+
+/*------- Mobile Logo and Burger Menu Section Ends -------*/
+
+/*------- Desktop Logo and Navbar Menu Section Starts -------*/
+
+.bg-logo-navbar-menu-desktop { background: -webkit-linear-gradient(#ffc08a, #E91E63); background: -moz-linear-gradient(#ffc08a, #E91E63); background: -ms-linear-gradient(#ffc08a, #E91E63); background: -o-linear-gradient(#ffc08a, #E91E63); background: linear-gradient(#ffc08a, #E91E63); display: block; left: 0; position: -webkit-sticky; position: sticky; top: 0; -webkit-transition: 0.5s ease-in-out; -moz-transition: 0.5s ease-in-out; -ms-transition: 0.5s ease-in-out; -o-transition: 0.5s ease-in-out; transition: 0.5s ease-in-out; width: 100%; z-index: 10; }
+.header-logo-desktop > a { display: inline-block; }
+.header-logo-desktop > a > p { color: #000000; font: 1.8rem/1.7 "Muli-SemiBold"; text-transform: uppercase; }
+.header-logo-desktop > a > p > span { color: #ffffff; }
+.menu-listing-desktop { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; justify-content: flex-end; }
+.menu-listing-desktop > li > a { -webkit-box-shadow: inset 0 0 0 0 #ffffff; -moz-box-shadow: inset 0 0 0 0 #ffffff; -ms-box-shadow: inset 0 0 0 0 #ffffff; -o-box-shadow: inset 0 0 0 0 #ffffff; box-shadow: inset 0 0 0 0 #ffffff; color: #fff; display: block; font: 1.6rem/1.2 "Muli-Light"; padding: 20px; }
+.menu-listing-desktop > li > a:hover,
+.menu-listing-desktop > li.active > a { box-shadow: inset 0 -59px 0 0 #ffffff; -webkit-box-shadow: inset 0 -59px 0 0 #ffffff; -moz-box-shadow: inset 0 -59px 0 0 #ffffff; -ms-box-shadow: inset 0 -59px 0 0 #ffffff; -o-box-shadow: inset 0 -59px 0 0 #ffffff; color: #000000; }
+
+/*------- Desktop Logo and Navbar Menu Section Ends -------*/
+
+/*------- Banner Section Starts -------*/
+
+.bg-banner { background: url("../images/banner.jpg") no-repeat fixed; background-size: cover; height: 100vh; margin-top: -60px; position: relative; z-index: 8; }
+.bg-banner-height { height: 100vh; }
+.banner-info > h1 { background: -webkit-linear-gradient(#ffc08a, #E91E63); background: -moz-linear-gradient(#ffc08a, #E91E63); background: -ms-linear-gradient(#ffc08a, #E91E63); background: -o-linear-gradient(#ffc08a, #E91E63); background: linear-gradient(#ffc08a, #E91E63); -webkit-background-clip: text; font: 6rem/1.4 "Muli-Bold"; margin-bottom: 15px; -webkit-text-fill-color: transparent; }
+.banner-info > h3 { color: #ff377b; font: 1.8rem/1.2 "Muli-Light"; margin-bottom: 30px; }
+.btn-read-more { border: 2px solid #ff377b; -webkit-box-shadow: inset 0 0 0 0 #ff377b; -moz-box-shadow: inset 0 0 0 0 #ff377b; -ms-box-shadow: inset 0 0 0 0 #ff377b; -o-box-shadow: inset 0 0 0 0 #ff377b; box-shadow: inset 0 0 0 0 #ff377b; color: #ff377b; display: inline-block; font: 1.8rem/1.2 "Muli-Light"; padding: 10px 30px 15px; text-align: center; }
+.btn-read-more:hover { -webkit-box-shadow: inset 0 54px 0 0 #ff377b; -moz-box-shadow: inset 0 54px 0 0 #ff377b; -ms-box-shadow: inset 0 54px 0 0 #ff377b; -o-box-shadow: inset 0 54px 0 0 #ff377b; box-shadow: inset 0 54px 0 0 #ff377b; border: 2px solid #ff377b; color: #fff; }
+.btn-read-more:focus { border: 2px solid #ff377b; -webkit-box-shadow: inset 0 0 0 0 #ff377b; -moz-box-shadow: inset 0 0 0 0 #ff377b; -ms-box-shadow: inset 0 0 0 0 #ff377b; -o-box-shadow: inset 0 0 0 0 #ff377b; box-shadow: inset 0 0 0 0 #ff377b; color: #ff377b; outline: 0; }
+
+/*------- Banner Section Ends -------*/
+
+/*------- We Do Section Starts -------*/
+
+.bg-wedo, 
+.bg-gallery,
+.bg-team,
+.bg-contact { background-color: #280045; padding: 50px 15px; }
+.panel-wedo { background-color: #fff; -webkit-border-radius: 24px; -moz-border-radius: 24px; -ms-border-radius: 24px; -o-border-radius: 24px; border-radius: 24px; overflow: hidden; padding: 30px; position: relative; -webkit-transition: 0.5s linear; -moz-transition: 0.5s linear; -ms-transition: 0.5s linear; -o-transition: 0.5s linear; transition: 0.5s linear; z-index: 1; }
+.panel-wedo > i { color: #000; font-size: 3rem; margin-bottom: 15px; }
+.panel-wedo > h3 { color: #000; font: 2.4rem/1.2 "Muli-SemiBold"; margin-bottom: 15px; }
+.panel-wedo > p { color: #000; }
+.panel-wedo::after { background: #ff377b; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; content: ""; display: block; height: 80px; position: absolute; right: -30px; top: -30px; -webkit-transition: 0.5s linear; -moz-transition: 0.5s linear; -ms-transition: 0.5s linear; -o-transition: 0.5s linear; transition: 0.5s linear; width: 80px; z-index: -1; }
+.panel-wedo:hover { -webkit-transform: translateY(-3%); -moz-transform: translateY(-3%); -ms-transform: translateY(-3%); -o-transform: translateY(-3%); transform: translateY(-3%); }
+.panel-wedo:hover::after { -webkit-transform: scale(2); -moz-transform: scale(2); -ms-transform: scale(2); -o-transform: scale(2); transform: scale(2); }
+
+/*------- We Do Section Ends -------*/
+
+/*------- Who We Are Section Starts -------*/
+
+.bg-whowe,
+.bg-event,
+.bg-price { background-color: #420071; padding: 50px 15px; }
+.abount-info > p:first-child { color: #d640ef; font-size: 2.4rem; margin-bottom: 30px; }
+.abount-info > p:nth-child(2) { color: #c393cb; font-size: 1.8rem; margin-bottom: 30px; }
+.about-listing > li { color: #cecece; font: 1.8rem/1.7 "Muli-Light"; margin-bottom: 10px; }
+.about-listing > li:last-child { margin-bottom: 0; }
+.img-about { margin: 0 auto; width: 350px; }
+
+/*------- Who We Are Section Ends -------*/
+
+/*------- Gallery Section Starts -------*/
+
+.bg-gallery { padding: 50px 15px 20px; }
+.img-overlay { margin-bottom: 30px; -webkit-transition: 0.5s linear; -moz-transition: 0.5s linear; -ms-transition: 0.5s linear; -o-transition: 0.5s linear; transition: 0.5s linear; }
+.img-overlay:hover { -webkit-filter: brightness(30%); filter: brightness(30%); }
+
+/*------- Gallery Section Ends -------*/
+
+/*------- Event Section Starts -------*/
+
+.bg-event { padding: 50px 15px 20px; }
+.panel-event {  border: 2px solid #E91E63; padding: 30px 15px; margin-bottom: 40px; transition: 0.5s linear; -webkit-transition: 0.5s linear; -moz-transition: 0.5s linear; -ms-transition: 0.5s linear; -o-transition: 0.5s linear; }
+.event-boxes { background-color: #E91E63; color: #fff; padding: 15px; text-align: center; transition: 0.5s linear; -webkit-transition: 0.5s linear; -moz-transition: 0.5s linear; -ms-transition: 0.5s linear; -o-transition: 0.5s linear; }
+.event-boxes > p:first-child { font: 2rem/1.2 "Muli-SemiBold"; }
+.event-boxes > p { font-size: 1.8rem; }
+.events-info > h3 { color: #E91E63; font: 3rem/1.2 "Muli-SemiBold"; margin-bottom: 15px; }
+.events-info > p { color: #c393cb; }
+.event-boxes:hover { background-color: #560094; }
+.cultural-events { margin-bottom: 0; }
+
+/*------- Event Section Ends -------*/
+
+/*------- Testimonial Slider Starts -------*/
+
+.testimonial { background: #faf8d4; margin: 0 10px 60px; padding: 20px 40px 20px 70px; position: relative; }
+.testimonial:before { border-bottom: 50px solid #eee; border-left: 50px solid #420071; box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.3); -webkit-box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.3); -moz-box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.3); -ms-box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.3); -o-box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.3); content: ""; height: 0; width: 0; position: absolute; top: 0; left: 0; }
+.testimonial .testimonial-title { color: #420071; font-family: "Muli-SemiBold"; letter-spacing: 0.7px; margin-bottom: 15px; }
+.testimonial .description { color: #000; }
+.testimonial .post { color: #e91453; display: block; font: 1.8rem/1.2 "Muli-SemiBold"; letter-spacing: 0.7px; margin-top: 10px; }
+.testimonial .pic { -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; bottom: -35px; height: 70px; overflow: hidden; position: absolute; right: 23px; width: 70px; }
+.testimonial .pic img { height: auto; width: 100%; }
+.owl-theme .owl-controls{ display: block; margin-top: 40px; }
+.owl-theme .owl-controls .owl-buttons div { background-color: #420071; -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border-radius: 0; margin: 0 10px; opacity: 1; padding: 10px 15px; }
+.owl-prev::before,
+.owl-next::before { content: "\f053"; color: #fff; font-family: "Font Awesome 5 Free"; font-size: 1.8rem; font-weight: 900; }
+.owl-next::before { content: "\f054"; }
+
+/*------- Testimonial Slider Ends -------*/
+
+/*------- Team Section Starts -------*/
+
+.team-figure { overflow: hidden; position: relative; -webkit-transition: 0.5s linear; -moz-transition: 0.5s linear; -ms-transition: 0.5s linear; -o-transition: 0.5s linear; transition: 0.5s linear; }
+.img-team { -webkit-transition: 0.5s linear; -moz-transition: 0.5s linear; -ms-transition: 0.5s linear; -o-transition: 0.5s linear; transition: 0.5s linear; width: 100%; }
+.team-member-info { background: #9400ff; bottom: 0; padding: 10px; position: absolute; -webkit-transform: translateY(100%); -moz-transform: translateY(100%); -ms-transform: translateY(100%); -o-transform: translateY(100%); transform: translateY(100%); -webkit-transition: 0.5s linear; -moz-transition: 0.5s linear; -ms-transition: 0.5s linear; -o-transition: 0.5s linear; transition: 0.5s linear; width: 100%; }
+.team-member-info > h3 { color: #ffffff; font: 2.4rem/1.2 "Muli-SemiBold"; }
+.team-member-info > p { color: #ffffff; }
+.team-figure:hover .team-member-info { -webkit-transform: translateY(0%); -moz-transform: translateY(0%); -ms-transform: translateY(0%); -o-transform: translateY(0%); transform: translateY(0%); }
+.team-figure:hover .img-team { -webkit-transform: scale(1.15); -moz-transform: scale(1.15); -ms-transform: scale(1.15); -o-transform: scale(1.15); transform: scale(1.15); }
+
+/*------- Team Section Ends -------*/
+
+/*------- Price Section Starts -------*/
+
+.panel-price { background-color: #fff; -webkit-border-radius: 0 60px; -moz-border-radius: 0 60px; -ms-border-radius: 0 60px; -o-border-radius: 0 60px; border-radius: 0 60px; padding: 30px; -webkit-transition: 0.5s linear; -moz-transition: 0.5s linear; -ms-transition: 0.5s linear; -o-transition: 0.5s linear; transition: 0.5s linear; }
+.panel-price:hover { -webkit-border-radius: 60px 0; -moz-border-radius: 60px 0; -ms-border-radius: 60px 0; -o-border-radius: 60px 0; border-radius: 60px 0; }
+.price-content-info > h3 { color: #ff377b; font: 3rem/1.2 "Muli-Bold"; letter-spacing: 0.7px; margin-bottom: 10px; }
+.price-content-info > h3.price-value { color: #673AB7; font: 3rem/1.2 "Muli-Bold"; letter-spacing: -2px; }
+.price-content-info > p.plan-desc { margin-bottom: 20px; }
+.lunch-dinner-items { margin-bottom: 30px; }
+.lunch-dinner-items > li { color: #ff377b; font: 1.8rem/1.2 "Muli-Light"; margin-bottom: 10px; }
+.lunch-dinner-items > li > i { padding-right: 7px; }
+.btn-register { background-color: #000; border: 0; -webkit-border-radius: 7px; -moz-border-radius: 7px; -ms-border-radius: 7px; -o-border-radius: 7px; border-radius: 7px; -webkit-box-shadow: inset 120px 0 0 0 #ff377b; -moz-box-shadow: inset 120px 0 0 0 #ff377b; -ms-box-shadow: inset 120px 0 0 0 #ff377b; -o-box-shadow: inset 120px 0 0 0 #ff377b; box-shadow: inset 120px 0 0 0 #ff377b; color: #fff; font: 1.6rem/1.2 "Muli-Light"; letter-spacing: 1px; padding: 10px 25px 15px; -webkit-transition: 0.5s linear; -moz-transition: 0.5s linear; -ms-transition: 0.5s linear; -o-transition: 0.5s linear; transition: 0.5s linear; }
+.btn-register:hover { -webkit-box-shadow: inset 0 0 0 0 #ff377b; -moz-box-shadow: inset 0 0 0 0 #ff377b; -ms-box-shadow: inset 0 0 0 0 #ff377b; -o-box-shadow: inset 0 0 0 0 #ff377b; box-shadow: inset 0 0 0 0 #ff377b; color: #fff; }
+.btn-register:focus { -webkit-box-shadow: inset 120px 0 0 0 #ff377b; -moz-box-shadow: inset 120px 0 0 0 #ff377b; -ms-box-shadow: inset 120px 0 0 0 #ff377b; -o-box-shadow: inset 120px 0 0 0 #ff377b; box-shadow: inset 120px 0 0 0 #ff377b; color: #fff; outline: 0; }
+
+/*------- Price Section Ends -------*/
+
+/*------- Contact Us Section Starts -------*/
+
+.display-map { border: 0; height: 450px; width: 100%; }
+.form-group-contact { margin-bottom: 30px; }
+.form-control-contact { background-color: #280045; border: 1px solid #fff; -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border-radius: 0; -webkit-box-shadow: none; -moz-box-shadow: none; -ms-box-shadow: none; -o-box-shadow: none; box-shadow: none; color: #fff; height: 40px; font: 1.6rem/1.42857143 "Muli-Light"; letter-spacing: 0.7px; padding-bottom: 10px; }
+textarea.form-control-contact { height: 100px; resize: none; }
+.form-control-contact:focus { border-color: #fff; -webkit-box-shadow: none; -moz-box-shadow: none; -ms-box-shadow: none; -o-box-shadow: none; box-shadow: none; }
+.form-control-contact::placeholder { color: #fff; opacity: 1; }
+.form-control-contact:-ms-input-placeholder { color: #fff; }
+.form-control-contact::-ms-input-placeholder { color: #fff; }
+.btn-send { background-color: #000; border: 0; -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border-radius: 0; -webkit-box-shadow: inset 0 46px 0 0 #ff377b; -moz-box-shadow: inset 0 46px 0 0 #ff377b; -ms-box-shadow: inset 0 46px 0 0 #ff377b; -o-box-shadow: inset 0 46px 0 0 #ff377b; box-shadow: inset 0 46px 0 0 #ff377b; color: #fff; font: 1.8rem/1.2 "Muli-Light"; text-transform: uppercase; -webkit-transition: 0.5s linear; -moz-transition: 0.5s linear; -ms-transition: 0.5s linear; -o-transition: 0.5s linear; transition: 0.5s linear; width: 100%; }
+.btn-send:hover,
+.btn-send:active:hover { -webkit-box-shadow: inset 0 0 0 0 #ff377b; -moz-box-shadow: inset 0 0 0 0 #ff377b; -ms-box-shadow: inset 0 0 0 0 #ff377b; -o-box-shadow: inset 0 0 0 0 #ff377b; box-shadow: inset 0 0 0 0 #ff377b; color: #fff; }
+.btn-send:focus,
+.btn-send:active:focus { -webkit-box-shadow: inset 0 46px 0 0 #ff377b; -moz-box-shadow: inset 0 46px 0 0 #ff377b; -ms-box-shadow: inset 0 46px 0 0 #ff377b; -o-box-shadow: inset 0 46px 0 0 #ff377b; box-shadow: inset 0 46px 0 0 #ff377b; color: #fff; outline: 0; }
+
+/*------- Contact Us Section Ends -------*/
+
+/*------- Copyright Section Starts -------*/
+
+.bg-copyright { background-color: #000000; padding: 15px; }
+.copyright-info > p { color: #fff; font-size: 1.6rem; }
+.copyright-info > p > span { color: #ff377b; }
+
+/*------- Copyright Section Ends -------*/
